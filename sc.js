@@ -76,7 +76,8 @@ form.addEventListener("submit", saveUserFrom);
 
 displayEntries();
 
-// Add additional validations to the date input field so that it accepts date of birth for people between ages 18 and 55 only. 
+// Add additional validations to the date input field so that it accepts date of birth for people between ages 18 and 55 only. You'll need to figure out how to do this.
+
 function getAge(today, birthDate) {
   // var today = new Date();
   // var birthDate = new Date(DOB);
