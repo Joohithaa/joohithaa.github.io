@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-    <link rel="stylesheet" href="./Registration Form_files/style.css">
-    <script src="./Registration Form_files/script1.js.download" defer=""></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script1.js" defer></script>
     <style>
       * {
         margin: 0;
@@ -14,7 +15,7 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
       body {
-        background-color:rgb(226, 65, 237);
+        background-color:rgb(143, 232, 232);
       }
       .head {
         margin-top: 1rem;
@@ -63,7 +64,7 @@
       }
 
       input:invalid:focus {
-        border: 2px solid rgb(93, 34, 34);
+        border: 2px solid red;
       }
 
       .table {
@@ -90,34 +91,62 @@
         <h2 align="center">Registration Form</h2>
 
         <table class="tableForm" cellspacing="25px">
-          <tbody><tr>
+          <tr>
             <td><label for="name">Name :</label></td>
             <td>
-              <input class="input" type="text" name="name" id="name" placeholder="Full Name" required="">
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                required
+              />
             </td>
           </tr>
           <tr>
             <td><label for="email">E-mail :</label></td>
             <td>
-              <input class="input" type="email" name="email" id="email" placeholder="Email" required="">
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
             </td>
           </tr>
           <tr>
             <td><label for="name">Password :</label></td>
             <td>
-              <input class="input" type="password" name="password" id="password" placeholder="Password" required="">
+              <input
+                class="input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
             </td>
           </tr>
           <tr>
             <td><label for="dob">Date Of Birth :</label></td>
             <td>
-              <input style="width: 220px" class="input" type="date" name="dob" id="dob" required="">
+              <input
+                style="width: 220px"
+                class="input"
+                type="date"
+                name="dob"
+                id="dob"
+                required
+              />
             </td>
           </tr>
           <tr>
             <td colspan="2">
-              <input type="checkbox" name="agree" id="agree">
-              <label for="checkbox">Accept Terms &amp; Conditions</label>
+              <input type="checkbox" name="agree" id="agree" />
+              <label for="checkbox">Accespt Terms & Conditions</label>
             </td>
           </tr>
           <tr>
@@ -125,22 +154,13 @@
               <button class="btn" type="submit">Submit</button>
             </td>
           </tr>
-        </tbody></table>
+        </table>
       </form>
     </div>
 
     <div class="entry">
       <h2 class="subHead">Entries</h2>
-      <div id="tableDiv"><table class="table" border="2">
-  <tbody><tr>
-    <th class="th">Name</th>
-    <th class="th">Email</th>
-    <th class="th">Password</th>
-    <th class="th">Dob</th>
-    <th class="th">Accepted terms?</th>
-  </tr>
-    
-  </tbody></table></div>
+      <div id="tableDiv"></div>
     </div>
-  
-</body></html>
+  </body>
+</html>
